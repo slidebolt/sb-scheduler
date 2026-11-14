@@ -41,7 +41,7 @@ type App struct {
 
 func New() *App { return &App{schedules: map[string]*scheduleEntry{}, now: time.Now} }
 func (a *App) Hello() contract.HelloResponse {
-	return contract.HelloResponse{ID: ServiceID, Kind: contract.KindService, ContractVersion: contract.ContractVersion, DependsOn: []string{"messenger", "storage"}}
+	return contract.HelloResponse{ID: ServiceID, Kind: contract.KindService, ContractVersion: contract.ContractVersion, DependsOn: []string{"messenger", "storage"}, Setup: contract.RequiredSetup("Core")}
 }
 
 func (a *App) OnStart(deps map[string]json.RawMessage) (json.RawMessage, error) {
