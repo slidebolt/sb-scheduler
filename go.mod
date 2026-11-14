@@ -5,10 +5,10 @@ go 1.26.1
 require (
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/slidebolt/sb-contract v1.0.6
-	github.com/slidebolt/sb-domain v1.0.17
-	github.com/slidebolt/sb-messenger-sdk v1.0.8
+	github.com/slidebolt/sb-domain v1.0.24
+	github.com/slidebolt/sb-messenger-sdk v1.0.9
 	github.com/slidebolt/sb-runtime v1.0.6
-	github.com/slidebolt/sb-scheduler-sdk v0.1.0
+	github.com/slidebolt/sb-scheduler-sdk v0.2.0
 	github.com/slidebolt/sb-storage-sdk v1.0.8
 	github.com/slidebolt/sb-storage-server v1.0.11
 )
